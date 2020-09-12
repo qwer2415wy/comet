@@ -1,0 +1,332 @@
+/*
+ * If you have conscience, you should not edit or delete name of developer.
+ * หากคุณมีมโนธรรม คุณไม่ควรแก้ไขหรือลบชื่อผู้พัฒนา
+ * Designed by anuwat avera | https://www.facebook.com/THETOPTHAILAND1107
+ */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sarabun&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: gray;
+}
+body, html {
+  height: 100%;
+}
+
+.bg {
+  height: 100%;
+  background-image: url("./img/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* nav bar */
+.header, .logo-text, .button-box, .button-box ul, .button-box li, .button-box a, .sv-name-and-menu{
+  aborder: 1px solid red;
+}
+.header{
+  background-color: #00316b;
+  padding: 10px 0px;
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 999;
+}
+.header:hover{
+  opacity: 0.9;
+}
+@media (max-width:768px){
+  .header{
+    padding: 0px 0px;
+  }
+}
+.sv-name-and-menu{
+  padding: 16px;
+  display: inline-block;
+}
+@media (max-width:768px){
+  .sv-name-and-menu{
+    display: block;
+  }
+}
+.server-name, .server-name:hover{
+  margin: 0 10px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+}
+@media (max-width:768px){
+  .server-name{
+    font-size: 18px;
+  }
+}
+.toggle{
+  padding: 0px;
+  text-align: right;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  display: none;
+}
+@media (max-width:768px){
+  .toggle{
+    display: inline-block;
+    float: right;
+  }
+}
+.button-box {
+  float: right;
+  margin-right: 20px;
+}
+@media (max-width:768px){
+  .button-box{
+    margin-right: 0px;
+  }
+}
+.button-box ul{
+  list-style: none;
+}
+.button-box li{
+  float: left;
+  padding: 15px;
+  text-align: center;
+}
+.button-box a, .button-box a:hover, .button-box a:focus{
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding: 4px;
+}
+@media (max-width:768px) {
+  .button-box{
+    display: none;
+  }
+  .button-box{
+    float: none;
+  }
+  .button-box ul{
+    display: block;
+  }
+  .button-box li{
+    display: block;
+    float: none;
+  }
+  .active{
+    display: block;
+  }
+}
+
+/* class wellcome */
+.wellcome ,.wellcome hr, .wellcome p, .logo, .logo img ,.info-and-status, .info-and-status h1, .server-ip, .server-ip p, .server-ip button, .icon{
+  aborder: 1px solid red;
+}
+.wellcome{
+  color:#fff;
+  text-align: center;
+  position: relative;
+  opacity: 0.9;
+}
+@media (max-width:450px){
+  .wellcome{
+    top:70px;
+  }
+}
+@media (min-width:451px){
+  .wellcome{
+    top:120px;
+  }
+}
+.wellcome hr{
+  width: 80%;
+  margin: 10px auto;
+  background-color: #dbdbdb;
+}
+.wellcome p{
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* class icon */
+@media all and (min-width:451px){
+  .icon{
+    display: none;
+  }
+}
+
+/* class logo */
+.logo{
+  margin: 5px auto;
+  width: 250px;
+  height: 250px;
+}
+@media all and (max-width:450px){
+  .logo{
+    display: none;
+  }
+}
+@media (max-width:575px){
+  .logo{
+    width: 230px;
+    height: 230px;
+  }
+}
+@media (min-width:1980px){
+  .logo{
+    width: 330px;
+    height: 330px;
+  }
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+
+/* class info & status */
+.info-and-status h1{
+  margin: 5px 0;
+  font-size: 26px;
+  display: inline-block;
+}
+.info-and-status h1:nth-child(1){
+  font-size: 35px;
+}
+
+/* class server ip */
+.server-ip{
+  margin: 20px auto 10px auto;
+  width: 380px;
+  border-radius: 30px;
+  color:#dcdedc;
+  background-image: linear-gradient(80deg, #a80f0f 20%, #07691b);
+  display: inline-block;
+  animation: jump 1.8s infinite;
+}
+@media all and (max-width:500px){
+  .server-ip{
+    width: 90%;
+    margin: 10px auto 0px auto;
+  }
+}
+@keyframes jump {
+  0%{
+    opacity: 0.5;
+    box-shadow: 0px 0px 6px 1px #fff;
+    transform: scale(1);
+  }
+  50%{
+    opacity: 0.9;
+    box-shadow: 0px 0px 10px 1px #fff;
+    transform: scale(1.1);
+  }
+  100%{
+    opacity: 0.5;
+    box-shadow: 0px 0px 6px 1px #fff;
+    transform: scale(1);
+  }
+}
+.server-ip img{
+  float: left;
+  width: 64px;
+  height: 42px;
+  border-radius: 30px 0px 0px 30px;
+}
+@media all and (max-width:500px){
+  .server-ip img{
+    display: none;
+  }
+}
+.server-ip p{
+  position: relative;
+  top:5px;
+  font-size: 20px;
+  text-align: center;
+  display: inline-block;
+}
+@media all and (max-width:500px){
+  .server-ip p{
+    position: static;
+    margin: 3px 0px 3px 20px;
+    font-size: 16px;
+    float: left;
+  }
+}
+.server-ip button, .server-ip button:focus{
+  float: right;
+  outline: none;
+  border: none;
+  border-radius: 0px 30px 30px 0px;
+  margin-right: -2px;
+  padding: 7px 22px;
+  font-size: 18px;
+  color:#dcdedc;
+  background-color: #145c1e;
+}
+@media all and (max-width:500px){
+  .server-ip button, .server-ip button:focus{
+    float: right;
+    border-radius: 0px 15px 15px 0px;
+    padding: 3px 5%;
+  }
+  .btn-computer{
+    display: none;
+  }
+}
+@media all and (min-width:501px){
+  .btn-mobile{
+    display: none;
+  }
+}
+.server-ip button:hover{
+  background-color: #1b822a;
+}
+
+footer{
+  background-color: #00316b;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color:#fff;
+  opacity: 0.8;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-family: 'Sarabun', sans-serif;
+}
+footer:hover{
+  opacity: 0.9;
+}
+footer a, footer a:hover{
+  color:red;
+  text-decoration: none;
+}
+.center-s-d{
+  margin: 0 auto;
+  width: 60%;
+}
+@media all and (max-width:575px) {
+  .center-s-d{
+    width: 90%;
+  }
+}
+.skills{
+  float: left;
+  display: inline-block;
+}
+.designed{
+  float: right;
+  display: inline-block;
+}
+@media all and (max-width:1024px) {
+  .skills, .designed{
+    float: none;
+    display: block;
+  }
+}

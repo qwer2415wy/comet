@@ -1,211 +1,135 @@
-<!DOCTYPE HTML>
-<!--
-	MegaCorp by TEMPLATED
-    templated.co @templatedco
-    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
+
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>MegaCorp by TEMPLATED</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css" />
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-	</head>
-	<body class="homepage">
+<head>
+<!-- Website name | ชื่อเว็บไซต์ -->
+<title>Hypixel</title>
+<!-- Website icon | ไอคอนเว็บไซต์ -->
+<!-- href="https://api.mcsrvstat.us/icon/ip-server-you > -->
+<!-- href="https://api.mcsrvstat.us/icon/ใส่ไอพีเซิร์ฟเวอร์ > -->
+<link rel="icon" href="https://api.mcsrvstat.us/icon/hypixel.net">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./styles.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e198ddcfbb.js" crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+<script type="text/javascript">
 
-		<!-- Header -->
-		<div id="header-wrapper">
-		
-        	<div id="header" class="container">
-            
-            	<div id="logo"><h1><a href="#">MegaCorp</a></h1></div>
-                <nav id="nav">
-                    <ul>
-                        <li class="current_page_item"><a href="index.html">Homepage</a></li>
-                        <li><a href="twocolumn1.html">Right Sidebar</a></li>
-                        <li><a href="twocolumn2.html">Left Sidebar</a></li>
-                        <li><a href="onecolumn.html">No Sidebar</a></li>
-                    </ul>
-                </nav>
-                
-            </div>
-			
-			<div id="banner">
-				<div class="container">
-					<div class="row">
-						<section class="12u">
-							<header>
-								<h2>In posuere eleifend odio quisque semper</h2>
-								<span class="byline">Pellentesque viverra vulputate enim. Aliquam erat volutpat. Pellentesque tristique ante ut risus. Quisque dictum. Integer nisl risus, sagittis rutrum id, elementum congue. Suspendisse dictum porta lectus.</span>
-							</header>
-							<a href="#" class="button button-alt">Read More</a>
-						</section>
-					</div>
-				</div>
-			</div>			
+      /* If you not understand, do not fix | หากไม่เข้าใจ ไม่แนะนำให้แก้ไข */
+  $(document).ready(function(){
+    $('.menu').click(function(){
+      $('.button-box').toggleClass('active');
+    })
+  })
 
-		</div>
-		<!-- Header Ends Here -->
+      /* If you not understand, do not fix | หากไม่เข้าใจ ไม่แนะนำให้แก้ไข */
+  function myFunction() {
+    alert("Copy success | Join now. I'm waiting for you.");
+  }
 
-		<!-- Featured Area -->
-			<div id="featured-wrapper">
-			
-				<div class="container">
-					<div class="row double">
-					
-                        <section class="4u">
-                           <header>
-	                           <h2>Maecenas luctus lectus</h2>
-                           </header>
-                            <span class="pennant"><span class="fa fa-apple"></span></span>
-                            <p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-                            <a href="#" class="button button-style1">Read More</a>
-                        </section>
-                        <section class="4u">
-                            <header>
-	                            <h2>Etiam rhoncus volutpat</h2>
-                            </header>
-                            <span class="pennant"><span class="fa fa-rocket"></span></span>
-                            <p>Donec ornare neque ac sem. Mauris aliquet. Aliquam sem leo, vulputate sed, convallis at, ultricies quis, justo. Donec nonummy magna.</p>
-                            <a href="#" class="button button-style1">Read More</a>
-                        </section>
-                        <section class="4u">
-                            <header>
-	                            <h2>Mauris vulputate dolor</h2>
-                            </header>
-                            <span class="pennant"><span class="fa fa-cogs"></span></span>
-                            <p>Curabitur sit amet nulla. Nam in massa. Sed vel tellus. Curabitur sem urna, consequat vel, suscipit in, mattis placerat, nulla. Sed ac leo.</p>
-                            <a href="#" class="button button-style1">Read More</a>
-                        </section>
-					
-					</div>
-				</div>
-				
-			</div>
-		
-		
-		<!-- Featured Ends Here -->
+      /* If you not understand, do not fix | หากไม่เข้าใจ ไม่แนะนำให้แก้ไข */
+  function copyip(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+  }
+        /* For this box, edit only ip. | สำหรับช่องนี้แก้ไขเฉพาะ ip */
+	 /* example | ตัวอย่าง  edit > (let url = "hypixel.net";) to (let url = "ip address";) */
+  let url = "hypixel.net";
+  $(document).ready(() => {
+      $.getJSON("https://api.mcsrvstat.us/1/" + url, (status) => {
+          if (status.debug.ping) {
+              $("#motd").append(status.motd.raw);
+              $("#status").append("online");
+              $("#version").append(status.version);
+              $("#players_num").append(status.players.online + "/" + status.players.max)
+              $.each(status.players.list, function (index, player) {
+                  $("#players_list").append("<li>" + player + "</li>")
+              });
+          } else {
+              $("#motd").append(status.hostname);
+              $("#status").append("offline");
+              $("#version").hide();
+              $("#players_num").hide();
+          }
+          $("body").fadeIn(2000);
+      });
+  });
 
-		<!-- Page -->
-        
-        	<div id="page">
-            	<div class="container">
-                	<div class="row">
-                    
-                    	<div id="content" class="8u">
-                        	<article>
-                            	<header>
-                                    <h2>Praesent mattis condimentum</h2>
-                                </header>
-                                <a href="#" class="image-style1"><img src="images/pic01.jpg" alt=""></a>
-                                <p>This is <strong>MegaCorp</strong>, a responsive HTML5 site template freebie by <a href="http://templated.co">TEMPLATED</a>. Released for free under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so use it for whatever (personal or commercial) &ndash; just give us credit! Check out more of our stuff at <a href="http://templated.co">our site</a> or follow us on <a href="http://twitter.com/templatedco">Twitter</a>.</p>
-                                <a href="#" class="button button-style1">Read More</a>
-                            </article>
-                            <div id="two-column">
-                            	<div class="row">
-                                    <section class="6u">
-                                        <h2>Tristique eleifend</h2>
-                                        <p>Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Quisque dictum. Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh.</p>
-                                        <ul class="style3">
-                                            <li class="first">
-                                                <p><span class="date"><a href="#">20012.10.25</a></span><span class="heading-title">Etiam posuere augue</span></p>
-                                                <p><a href="#">Integer nisl risus, sagittis convallis, rutrum id, elementum congue, nibh. Suspendisse dictum porta lectus.</a></p>
-                                            </li>
-                                            <li>
-                                                <p><span class="date"><a href="#">20012.10.25</a></span><span class="heading-title">Etiam posuere augue</span></p>
-                                                <p><a href="#">Quisque dictum. Integer nisl risus, sagittis elementum congue, nibh. Suspendisse dictum porta lectus.</a></p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                    <section class="6u">
-                                        <h2>Donec dictum metus</h2>
-                                        <ul class="style4">
-                                            <li class="first">
-                                                <h3>Mauris vulputate dolor sit amet</h3>
-                                                <p><a href="#">Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-                                            </li>
-                                            <li>
-                                                <h3>Fusce ultrices fringilla metus</h3>
-                                                <p><a href="#">In hac habitasse platea dictumst. Nullam id ante eget dui vulputate aliquam. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</a></p>
-                                            </li>
-                                            <li>
-                                                <h3>Donec dictum metus in sapien</h3>
-                                                <p><a href="#">Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum. Suspendisse sit amet tellus in eros bibendum condimentum.</a> </p>
-                                            </li>
-                                        </ul>
-                                    </section>
-                                </div>
-                            </div>
-                        </div>
-                    	<div id="sidebar" class="4u">
-                        	<div class="row">
-                                <section id="box1" class="6u">
-                                    <h2>Nulla  eleifend</h2>
-                                    <ul class="style4">
-                                        <li class="first"><a href="#">Maecenas luctus</a></li>
-                                        <li><a href="#">Etiam rhoncus erat</a></li>
-                                        <li><a href="#">Donec metus sapien</a></li>
-                                        <li><a href="#">Integer quis urna</a></li>
-                                        <li><a href="#">Etiam rhoncus erat</a></li>
-                                        <li><a href="#">Donec metus sapien</a></li>
-                                        <li><a href="#">Etiam volutpat erat</a></li>
-                                    </ul>
-                                </section>
-                                <section class="6u">
-                                    <h2>Nulla  eleifend</h2>
-                                    <ul class="style4">
-                                        <li class="first"><a href="#">Maecenas luctus</a></li>
-                                        <li><a href="#">Etiam rhoncus erat</a></li>
-                                        <li><a href="#">Donec metus sapien</a></li>
-                                        <li><a href="#">Integer quis urna</a></li>
-                                        <li><a href="#">Etiam rhoncus erat</a></li>
-                                        <li><a href="#">Donec metus sapien</a></li>
-                                        <li><a href="#">Etiam volutpat erat</a></li>
-                                    </ul>
-                                </section>
-                            </div>
-                            <section id="box2">
-                                <h2>Ipsum Consequat</h2>
-                                <ul class="style2">
-                                    <li class="first">
-                                        <p><a href="#"><img src="images/pics07.jpg" alt="">Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus nibh in augue praesent congue rutrum. </a></p>
-                                    </li>
-                                    <li>
-                                        <p><a href="#"><img src="images/pics08.jpg" alt="">Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo, vivamus fermentum augue praesent congue rutrum.</a></p>
-                                    </li>
-                                    <li>
-                                        <p><a href="#"><img src="images/pics09.jpg" alt="">Suspendisse sit amet tellus in eros bibendum condimentum. Donec leo, fermentum nibh in augue praesent a lacus congue rutrum. </a></p>
-                                    </li>
-                                    <li>
-                                        <p><a href="#"><img src="images/pics10.jpg" alt="">Aliquam lacinia metus ut elit. Suspendisse iaculis mauris nec lorem. Donec leo, vivamus fermentum augue praesent congue rutrum.</a></p>
-                                    </li>
-                                </ul>
-                                <a href="#" class="button button-style1">Read More</a>
-                            </section>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-            
-		<!-- /Page -->
+</script>
+</head>
+<body>
 
-		<!-- Copyright -->
-            <div id="copyright" class="container">
-                Design: <a href="http://templated.co">TEMPLATED</a> Images: <a href="http://unsplash.com">Unsplash</a> (<a href="http://unsplash.com/cc0">CC0</a>)
-            </div>
+<!-- Navigation bar | แถบนำทาง -->
+<div class="header">
+  <div class="sv-name-and-menu">
+    <a class="server-name" href="./index.html">server name</a>
+    <a class="toggle menu" style="color:#fff;">MENU</a>
+  </div>
 
+  <div class="button-box">
+    <ul>
+      <li><a href="#Set-link-ตั้งค่าลิงก์">webshop</a></li>
+      <li><a href="#Set-link-ตั้งค่าลิงก์">discord</a></li>
+      <li><a href="#Set-link-ตั้งค่าลิงก์">fb page</a></li>
+      <li><a href="#Set-link-ตั้งค่าลิงก์">fb group</a></li>
+    </ul>
+  </div>
+</div>
 
-	</body>
+<!-- background | พื้นหลัง, ภาพพื้นหลัง -->
+<div class="bg">
+
+  <div class="container">
+   <div class="row">
+     <div class="col-sm-12 wellcome">
+       <!-- Server icon | ไอคอน เซิร์ฟเวอร์ -->
+         <div class="icon">
+           <img src="https://api.mcsrvstat.us/icon/hypixel.net" alt="Erros">
+         </div>
+
+       <!-- Logo | โลโก้ -->
+         <div class="logo">
+         <img src="./img/logo.png" alt="Erros">
+         </div>
+
+         <!-- Information and status | ข้อมูลและสถานะ -->
+         <div class="info-and-status">
+           <h1>Hypixel server <span id="status"></span>!</h1> <br>
+           <h1>Join now</h1> <br>
+           <span id="players_num">Players: </span> <p id="version">Version: </p>
+         </div>
+
+         <!-- server ip | ip ของเซิร์ฟเวอร์ -->
+       <!-- edit <p id="p1">mc-server-name.com</p> to <p id="p1">Server name</p> -->
+       <!-- แก้ไข <p id="p1">mc-server-name.com</p> เป็น <p id="p1">ชื่อเซิร์ฟเวอร์</p> -->
+         <div class="server-ip">
+         <img src="https://api.mcsrvstat.us/icon/hypixel.net" alt="Erros">
+         <p id="p1">mc-server-name.com</p>
+         <button class="btn-computer" onclick="copyip('#p1');myFunction();"><i class="far fa-copy"></i></button>
+         <button class="btn-mobile" onclick="copyip('#p1');myFunction();"><i class="far fa-copy"></i></button>
+         </div>
+
+         <hr>
+         <p>The Hypixel Network is a Minecraft mini-game server, released on April 13, 2013, by Simon Collins-Laflamme and Philippe Touchette, and is managed by Hypixel Inc. Hypixel is only available on the Java Edition of Minecraft.
+         <a href="https://en.wikipedia.org/wiki/Hypixel" target="_blank">Read more..</a></p>
+     </div>
+   </div>
+  </div>
+
+<!-- If you have conscience, you should not edit or delete name of developer. -->
+<!-- หากคุณมีมโนธรรม คุณไม่ควรแก้ไขหรือลบชื่อผู้พัฒนา -->
+<footer>
+  <div class="center-s-d">
+    <div class="skills">develop skills only <a href="https://bit.ly/3bTSktw" target="_blank">(free download)</a></div>
+    <div class="designed">Designed by <a href="https://www.facebook.com/THETOPTHAILAND1107" target="_blank">anuwat avera</a></div>
+  </div>
+</footer>
+
+</div>
+
+</body>
 </html>
