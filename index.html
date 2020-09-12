@@ -2,12 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- Website name | ชื่อเว็บไซต์ -->
-<title>Hypixel</title>
-<!-- Website icon | ไอคอนเว็บไซต์ -->
-<!-- href="https://api.mcsrvstat.us/icon/ip-server-you > -->
-<!-- href="https://api.mcsrvstat.us/icon/ใส่ไอพีเซิร์ฟเวอร์ > -->
-<link rel="icon" href="https://api.mcsrvstat.us/icon/hypixel.net">
+<title>彗星伺服器</title>
+<link rel="icon" href="https://i.imgur.com/Eht9v4d.png">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="./styles.css">
@@ -16,19 +12,16 @@
 <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
 <script type="text/javascript">
 
-      /* If you not understand, do not fix | หากไม่เข้าใจ ไม่แนะนำให้แก้ไข */
   $(document).ready(function(){
     $('.menu').click(function(){
       $('.button-box').toggleClass('active');
     })
   })
 
-      /* If you not understand, do not fix | หากไม่เข้าใจ ไม่แนะนำให้แก้ไข */
   function myFunction() {
     alert("Copy success | Join now. I'm waiting for you.");
   }
 
-      /* If you not understand, do not fix | หากไม่เข้าใจ ไม่แนะนำให้แก้ไข */
   function copyip(element) {
     var $temp = $("<input>");
     $("body").append($temp);
@@ -36,9 +29,7 @@
     document.execCommand("copy");
     $temp.remove();
   }
-        /* For this box, edit only ip. | สำหรับช่องนี้แก้ไขเฉพาะ ip */
-	 /* example | ตัวอย่าง  edit > (let url = "hypixel.net";) to (let url = "ip address";) */
-  let url = "hypixel.net";
+  let url = "127.0.0.1";
   $(document).ready(() => {
       $.getJSON("https://api.mcsrvstat.us/1/" + url, (status) => {
           if (status.debug.ping) {
@@ -63,17 +54,16 @@
 </head>
 <body>
 
-<!-- Navigation bar | แถบนำทาง -->
 <div class="header">
   <div class="sv-name-and-menu">
-    <a class="server-name" href="./index.html">server name</a>
+    <a class="server-name" href="./index.html">彗星伺服器</a>
     <a class="toggle menu" style="color:#fff;">MENU</a>
   </div>
 
   <div class="button-box">
     <ul>
-      <li><a href="#Set-link-ตั้งค่าลิงก์">webshop</a></li>
-      <li><a href="#Set-link-ตั้งค่าลิงก์">discord</a></li>
+      <li><a href="#Set-link-ตั้งค่าลิงก์">贊助</a></li>
+      <li><a href="http://discord.gg/xXCz5P2">Discord</a></li>
       <li><a href="#Set-link-ตั้งค่าลิงก์">fb page</a></li>
       <li><a href="#Set-link-ตั้งค่าลิงก์">fb group</a></li>
     </ul>
